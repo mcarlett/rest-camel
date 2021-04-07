@@ -1,0 +1,16 @@
+name: Publisher
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/upload-artifact@v2
+      - name: Publish
+        with:
+          name: my-artifact
+          path: ${{ github.workspace }}/target/*.jar
+          #repo-token: ${{ secrets.GITHUB_TOKEN }}
