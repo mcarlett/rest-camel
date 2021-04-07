@@ -19,3 +19,8 @@ jobs:
           java-version: 11
       - name: Build
         run: ./mvnw verify -B
+      - name: Publish
+        uses: actions/upload-artifact@v2
+        with:
+          name: rest-camel
+          path: ${{ github.workspace }}/target/*.jar
