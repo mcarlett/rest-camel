@@ -19,3 +19,5 @@ jobs:
         run: ./mvnw verify -B
       - name: Publish
         run: ./mvnw deploy -B -DskipTests
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
