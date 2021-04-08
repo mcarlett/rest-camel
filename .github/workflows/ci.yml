@@ -3,8 +3,6 @@ name: Quarkus Codestart CI
 on:
   push:
     branches: [ master ]
-  pull_request:
-    branches: [ master ]
 
 jobs:
   build:
@@ -18,4 +16,4 @@ jobs:
       - name: Build
         run: ./mvnw verify -B
       - name: Publish
-        run: ./mvnw deploy -B -DskipTests -s ./.github/workflows/config/ci-settings.xml
+        run: ./mvnw deploy -B -DskipTests -s .github/workflows/config/ci-settings.xml
