@@ -16,9 +16,7 @@ jobs:
         uses: actions/setup-java@v1
         with:
           java-version: 11
-      - name: Validate
-        run: ./mvnw validate -B
 #      - name: Build
 #        run: ./mvnw verify -B
-#      - name: 'Deploy artifact'
-#        run: ./mvnw deploy -B -DskipTests -s .github/workflows/config/ci-settings.xml -X
+      - name: 'Deploy artifact'
+        run: ./mvnw deploy -B -DskipTests -s .github/workflows/config/ci-settings.xml
