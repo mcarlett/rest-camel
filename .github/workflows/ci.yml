@@ -17,4 +17,4 @@ jobs:
         with:
           java-version: 11
       - name: 'Deploy artifact'
-        run: ./mvnw deploy -B -DskipTests -s .github/workflows/config/ci-settings.xml
+        run: ./mvnw deploy -B -DuniqueVersion=false -s .github/workflows/config/ci-settings.xml
