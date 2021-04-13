@@ -4,8 +4,9 @@ env:
   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
 on:
-  push:
-    tags: [ v* ]
+  release:
+    types: [created]
+
 jobs:
   publish-tags-starting-with-v:
     runs-on: ubuntu-latest
