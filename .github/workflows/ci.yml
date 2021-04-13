@@ -16,6 +16,6 @@ jobs:
         with:
           java-version: 11
           server-id: github-mcarlett-rest-camel
-          settings-path: .github/workflows/config/ci-settings.xml 
+          settings-path: ${{ github.workspace }}/config/settings.xml 
       - name: 'Deploy artifact'
-        run: ./mvnw deploy -B -s .github/workflows/config/ci-settings.xml
+        run: ./mvnw deploy -B -s ${{ github.workspace }}/config/settings.xml
