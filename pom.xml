@@ -136,7 +136,7 @@
     </profiles>
     <distributionManagement>
         <repository>
-            <id>github</id>
+            <id>github-mcarlett-rest-camel</id>
             <name>GitHub REST Camel Apache Maven Packages</name>
             <url>https://maven.pkg.github.com/mcarlett/rest-camel</url>
         </repository>
