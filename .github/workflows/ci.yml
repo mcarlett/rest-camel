@@ -7,7 +7,7 @@ on:
   push:
     tags: [ v* ]
 jobs:
-  'publish tag v*':
+  publish-tags-starting-with-v:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
