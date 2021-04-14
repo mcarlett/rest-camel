@@ -1,3 +1,5 @@
+[![Checkstyle verification](https://github.com/mcarlett/rest-camel/actions/workflows/checkstyle-on-push-ci.yml/badge.svg)](https://github.com/mcarlett/rest-camel/actions/workflows/checkstyle-on-push-ci.yml)
+
 # rest-camel project
 
 This project uses Quarkus, the Supersonic Subatomic Java Framework.
