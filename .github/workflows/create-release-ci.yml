@@ -9,7 +9,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - id: perform
-      uses: mcarlett/release-explicit-version-action@v0.03
+      uses: mcarlett/release-explicit-version-action@v0.04
       with:
         release-version: 0.0.10
         devel-version: 0.0.11-SNAPSHOT
