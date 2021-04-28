@@ -13,7 +13,7 @@ jobs:
       with:
         release-version: 0.0.10
         devel-version: 0.0.11-SNAPSHOT
-        devel-branch: $GITHUB_REF
+        devel-branch: develop
         release-branch: master
     - run: "echo generated release: ${{ steps.perform.outputs.generated-tag }}"
       shell: bash
