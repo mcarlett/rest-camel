@@ -14,7 +14,7 @@ jobs:
       with:
         release-version: 0.0.10
         devel-version: 0.0.11-SNAPSHOT
-        devel-branch: develop
+        devel-branch: jboss-repo
         release-branch: master
     - id: show-tag
       run: "echo generated release: ${{ steps.perform.outputs.generated-tag }}"
