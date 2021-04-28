@@ -28,7 +28,7 @@ jobs:
     - id: checkout
       uses: actions/checkout@v2
     - id: perform
-      uses: mcarlett/release-explicit-version-action@v0.17
+      uses: mcarlett/release-explicit-version-action@v0.18
       with:
         release-version: ${{ github.event.inputs.release-version }}
         devel-version: ${{ github.event.inputs.devel-version }}
