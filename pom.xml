@@ -6,6 +6,14 @@
     <groupId>org.example</groupId>
     <artifactId>rest-camel</artifactId>
     <version>0.0.9</version>
+
+    <scm>
+        <connection>scm:git:https://github.com/mcarlett/rest-camel.git</connection>
+        <developerConnection>scm:git:https://github.com/mcarlett/rest-camel.git</developerConnection>
+        <url>https://github.com/mcarlett/rest-camel.git</url>
+        <tag>HEAD</tag>
+    </scm>
+
     <properties>
         <compiler-plugin.version>3.8.1</compiler-plugin.version>
         <maven.compiler.parameters>true</maven.compiler.parameters>
@@ -134,11 +142,35 @@
             </properties>
         </profile>
     </profiles>
+    <!-- Distribution Management -->
     <distributionManagement>
         <repository>
-            <id>github-mcarlett-rest-camel</id>
-            <name>GitHub REST Camel Apache Maven Packages</name>
-            <url>https://maven.pkg.github.com/mcarlett/rest-camel</url>
+            <id>jboss-releases-repository</id>
+            <name>JBoss Releases Repository</name>
+            <url>https://repository.jboss.org/nexus/service/local/staging/deploy/maven2</url>
         </repository>
+        <snapshotRepository>
+            <id>jboss-snapshots-repository</id>
+            <name>JBoss Snapshots Repository</name>
+            <url>https://repository.jboss.org/nexus/content/repositories/snapshots</url>
+        </snapshotRepository>
     </distributionManagement>
+
+    <!-- Repositories -->
+    <repositories>
+        <repository>
+            <id>jboss-public-repository-group</id>
+            <name>JBoss Public Repository Group</name>
+            <url>http://repository.jboss.org/nexus/content/groups/public/</url>
+            <layout>default</layout>
+            <releases>
+                <enabled>true</enabled>
+                <updatePolicy>never</updatePolicy>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+                <updatePolicy>never</updatePolicy>
+            </snapshots>
+        </repository>
+    </repositories>
 </project>
