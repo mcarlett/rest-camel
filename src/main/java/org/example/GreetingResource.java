@@ -8,9 +8,13 @@ import javax.ws.rs.core.MediaType;
 @Path("/hello-resteasy")
 public class GreetingResource {
 
-	@GET
-	@Produces(MediaType.TEXT_PLAIN)
-	public String hello() {
-		return "Hello RESTEasy after webhook2";
-	}
+    /**
+     * Say hello.
+     * @return String, the message
+     */
+    @GET
+    @Produces(MediaType.TEXT_PLAIN)
+    public String hello() {
+       return "Hello RESTEasy after webhook2";
+    }
 }

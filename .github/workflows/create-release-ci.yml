@@ -1,0 +1,19 @@
+name: Create Maven Release
+
+on: workflow_dispatch
+
+jobs:
+  perform-release:
+    runs-on: ubuntu-latest
+    name: Perform Maven release
+    steps:
+    - uses: actions/checkout@v2
+    - id: perform
+      uses: mcarlett/release-explicit-version-action@v0.05
+      with:
+        release-version: 0.0.10
+        devel-version: 0.0.11-SNAPSHOT
+        devel-branch: $GITHUB_REF
+        release-branch: master
+    - run: "echo generated release: ${{ steps.perform.outputs.generated-tag }}"
+      shell: bash
