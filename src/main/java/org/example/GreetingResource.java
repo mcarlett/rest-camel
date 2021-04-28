@@ -8,10 +8,10 @@ import javax.ws.rs.core.MediaType;
 @Path("/hello-resteasy")
 public class GreetingResource {
 
-	/**
-	 * Say hello.
-	 * @return String, the message
-	 */
+    /**
+     * Say hello.
+     * @return String, the message
+     */
     @GET
     @Produces(MediaType.TEXT_PLAIN)
     public String hello() {
