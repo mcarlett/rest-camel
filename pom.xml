@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.example</groupId>
     <artifactId>rest-camel</artifactId>
-    <version>0.0.23</version>
+    <version>0.0.24-SNAPSHOT</version>
 
     <scm>
         <connection>scm:git:https://github.com/mcarlett/rest-camel.git</connection>
